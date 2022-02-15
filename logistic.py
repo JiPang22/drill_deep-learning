@@ -10,7 +10,7 @@ Y = tf.placeholder(tf.float32, shape = [None, 1])
 W = tf.Variable(tf.random_normal([2, 1]), name = 'weight')
 b = tf.Variable(tf.random_normal([1]), name = 'bias')
 
-hypothesis = tf.sigmoid(tf.matmul(X, W)) + b
+hypothesis = tf.sigmoid(tf.matmul(X, W)+ b)
 
 cost = -tf.reduce_mean(Y * tf.log(hypothesis) + (1 - Y) * tf.log(1 - hypothesis))
 train = tf.train.GradientDescentOptimizer(learning_rate = 0.01).minimize(cost)
@@ -31,3 +31,4 @@ print("\nHypothesis: ", h, "\nCorrect (Y): ", c, "\nAccuracy: ", a)
 
 
 
+esfgjbrsdfghrdsj

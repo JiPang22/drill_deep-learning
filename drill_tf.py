@@ -34,5 +34,3 @@ for step in range(100001):
         print(step, "cost: ", cost_val, "\nprediction:\n", hy_val)
     
 
-
-
